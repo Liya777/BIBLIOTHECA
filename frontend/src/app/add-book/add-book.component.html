@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0OFkSvFsDjd6EOcJMgFk50chq4zUrwVc8KQ&usqp=CAU" alt="logo">
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="service">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="signup">Sign-Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="login">Login</a>
+      </li>  
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+
+            <form (ngSubmit)='addBook()' class="frm">
+                <p>
+                  <label>Book Name</label>
+                  <input type="text" name="bookname" [(ngModel)]='bookItem.BookName' required='required'>
+                </p>
+                <p>
+                  <label>Author</label>
+                  <input type="text" name="author" [(ngModel)]='bookItem.Author' required='required'>
+                </p>
+                <p>
+                  <label>Genre</label>
+                  <input type="text" name="genre" [(ngModel)]='bookItem.Genre' required='required'>
+                </p>
+                <p>
+                   <label>Cover page</label>
+                   <input type="file" name="cover" id="input" [(ngModel)]='bookItem.Cover' accept="image/*">
+                   <!-- <image id="preview"> -->
+                </p>
+                <p>
+                    <input type="submit" value="Submit">
+                    </p>
+         <!-- </div>                -->
+  <footer class="page-footer font-small  pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase">Bibliotheca</h5>
+          <p>Share your books with ones who seek the pleasure of reading and learning!</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          
+        </div>
+      </div>
+      </div>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright      
+    </div>
+  </footer>
+
+            
+            
+          
+                                                
+ 
